@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Next, January 2026",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "WhqcllAGYkm8oBdbeS6YGQ",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/WhqcllAGYkm8oBdbeS6YGQ",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-22T06:23:36.4832081Z",
+  "Updated": "2025-12-22T06:23:36.4832081Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

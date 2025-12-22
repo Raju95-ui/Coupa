@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Search",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "D1hkKmNh3ka1Uo1OUq_zHA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/D1hkKmNh3ka1Uo1OUq_zHA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-19T10:12:09.2225519Z",
+  "Updated": "2025-12-19T10:12:09.2225519Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

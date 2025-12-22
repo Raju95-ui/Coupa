@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="D8sNStsVX0eu_zuaTiVhvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="8d13d194-6a35-4f60-bc21-65237da81fcf" CvElementArea="541, 421, 282, 30" CvType="InputBox" DesignTimeRectangle="542, 422, 280, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_header_on_behalf_of' tag='INPUT' type='text' class='behalf' placeholder='Start typing name' aaname='On Behalf Of' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="87328d7b-ab8a-4d27-8474-074a9593b99a" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8d13d194-6a35-4f60-bc21-65237da81fcf" CvTextArea="452, 429, 82, 13" CvTextArgument="On Behalf Of" CvType="Text" DesignTimeRectangle="387, 427, 146, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='topForm' tag='LABEL' type='' class='group_label' aaname='On Behalf Of' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='On Behalf Of' /&gt;" Guid="68c14e2f-4c26-4769-98f3-b075b188814e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8c0715659bbda3228071e1c7953dd96a.png" xmlns="">0tunXhjK7lUeq3QSUM-vZMw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

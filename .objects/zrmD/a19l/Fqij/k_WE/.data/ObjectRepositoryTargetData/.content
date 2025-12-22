@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wS0Btl6KCkiU1W4Ibmwjhg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="fe9f4f17-7269-4ccf-8e2d-2ff7a9e392f7" CvElementArea="658, 624, 384, 28" CvType="InputBox" DesignTimeRectangle="651, 628, 393, 31" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='*Account. Inventory Shipping Supplies (12300)' aria-role='combobox' tag='INPUT' type='text' class='' aaname='' fuzzylevel:aria-label='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2c13232a-007b-4404-b870-5d78f5505cde" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fe9f4f17-7269-4ccf-8e2d-2ff7a9e392f7" CvTextArea="581, 636, 62, 13" CvTextArgument="- Prd Line" CvType="Text" DesignTimeRectangle="579, 636, 63, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Prd Line' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Prd Line' /&gt;" Guid="00547db0-75a5-4d67-953a-e0f9fd6feb0e" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="fe9f4f17-7269-4ccf-8e2d-2ff7a9e392f7" CvTextArea="582, 601, 61, 13" CvTextArgument="- Account" CvType="Text" DesignTimeRectangle="579, 601, 63, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Account' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' class='segment-meta' matching:class='fuzzy' fuzzylevel:class='0.0' tag='SPAN' type='' innertext='Account' check:innerText='Account' /&gt;" Guid="274ad5d5-c6db-4a30-8889-55c8d6f6940f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ef68f38566d34472ed546775f3d7cd60.png" xmlns="">0bFB22n5K40SJzWdWQQUFIQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

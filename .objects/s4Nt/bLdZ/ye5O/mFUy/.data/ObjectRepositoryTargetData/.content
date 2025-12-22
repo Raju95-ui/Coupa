@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZndKmAs0c0G11B0Yg3RPCw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="a7165bb7-5e13-4619-8201-d641d5ace777" CvElementArea="651, 593, 393, 31" CvType="InputBox" DesignTimeRectangle="662, 595, 210, 27" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Inventory Shipping Supplies (12300)' tag='LI' /&gt;" Guid="a1286167-270e-4240-99af-f18d3bd7526b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a7165bb7-5e13-4619-8201-d641d5ace777" CvTextArea="582, 601, 61, 13" CvTextArgument="- Account" CvType="Text" DesignTimeRectangle="579, 601, 63, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Account' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Account' /&gt;" Guid="86470297-1a46-4a19-9182-ec92d719acd5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="40cb18acb8954197f7a89617c1135b12.png" xmlns="">0eZf_SOlsxkOKm4Eazf8ckw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

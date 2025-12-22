@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jODrBumklkyYRVJevoqAgA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="4c9f201c-77f3-4827-984b-7e8d333ac723" CvElementArea="47, 266, 595, 48" CvType="InputBox" DesignTimeRectangle="53, 268, 588, 44" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='What do you need? Start your search here' tag='BUTTON' type='button' class='welcomeBanner__searchBtn s-welcomeBannerSearchBtn s-searchBarBtn' aaname='What do you need? Start your search here' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="9b4266dd-ad6e-4352-90ac-e3569b957985" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4c9f201c-77f3-4827-984b-7e8d333ac723" CvElementArea="47, 266, 595, 48" CvType="InputBox" DesignTimeRectangle="91, 279, 334, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='homepageWelcomeBannerApp' tag='SPAN' type='' class='welcomeBanner__searchBtnText' aaname='What do you need? Start your search here' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="cda38711-56b1-4a8f-aef9-2371e4ed0a6d" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="4c9f201c-77f3-4827-984b-7e8d333ac723" CvTextArea="29, 98, 184, 23" CvTextArgument="TEST INSTANCE" CvType="Text" DesignTimeRectangle="27, 92, 191, 39" ElementType="Icon" FullSelectorArgument="&lt;webctrl id='global-logo' tag='IMG' /&gt;" Guid="75c8a6f0-8e25-4283-85f0-e8e868fa92cc" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="babb28b0742e33d93a00843db3a00b31.png" xmlns="">0e0Hm9MobHEanRiobIfBxrg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "PAC20789-BR-Polibag PM3",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "VMyPvha9c0yKdjAhwkf-Cw",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/VMyPvha9c0yKdjAhwkf-Cw",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-19T10:14:11.2047597Z",
+  "Updated": "2025-12-19T10:14:11.2047597Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

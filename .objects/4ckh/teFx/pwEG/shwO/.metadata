@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Apply",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "shwO1YqESEGdJxNi3kxSyg",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/shwO1YqESEGdJxNi3kxSyg",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-22T10:29:20.8422563Z",
+  "Updated": "2025-12-22T10:29:20.8422563Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sBuayL4l20Gt7hUB1CXgbg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="5fa7822b-1c31-4be3-b884-ab7db7910d7c" CvElementArea="1286, 264, 88, 31" CvTextArea="1308, 273, 45, 13" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1289, 273, 83, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='search_advanced_button_picker_address' tag='SPAN' type='' class='' aaname='Search' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="126d486a-7e18-464e-ad83-46dbb9e872c3" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5fa7822b-1c31-4be3-b884-ab7db7910d7c" CvElementArea="1286, 264, 88, 31" CvTextArea="1308, 273, 45, 13" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1288, 266, 85, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='search_advanced_button_picker_address' tag='BUTTON' type='submit' class='button primaryBtn s-advSearch' aaname='Search' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="fcbaf87a-6bc0-4849-880a-0654cff24ed8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a06422fa6a9c171285c8a1f0259959fc.png" xmlns="">03apndKfUtUaQjll5yXtxJw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

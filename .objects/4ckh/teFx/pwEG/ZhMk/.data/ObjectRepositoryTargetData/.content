@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="iLI96y6CLEOuZRsLO2q4bw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="38d5beaf-509a-4cb5-8dca-c8d540807e56" CvElementArea="1215, 743, 93, 31" CvTextArea="1236, 752, 50, 13" CvTextArgument="Choose" CvType="Button" DesignTimeRectangle="1218, 752, 88, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Choose' tag='SPAN' /&gt;" Guid="71b9bbb9-d859-45b0-8413-524f0f9c7cd8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6c526bda594a5d9c9db5f589e1b56193.png" xmlns="">0KXe-t5PiSEKk4JBwRk9ydw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

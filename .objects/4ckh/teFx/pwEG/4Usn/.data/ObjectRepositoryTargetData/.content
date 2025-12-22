@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="J3ChKkB-ukCPA1_KUnG13g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="ded9cf22-2891-42ec-accd-8bc145f621be" CvElementArea="1615, 360, 69, 33" CvType="InputBox" DesignTimeRectangle="1617, 362, 45, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Add PAC20789-BR-Polibag PM3' aria-role='button' tag='SPAN' /&gt;" Guid="7744594d-b2d7-40bb-99ac-8dc1aef49838" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1246, 271, 437, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='PAC20789-BR-Polibag PM3' aria-role='link' tag='DIV' type='' class='item__title__link' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='PAC20789-BR-Polibag PM3' /&gt;" Guid="293fc31a-5985-41b4-89a2-e5f5103a1193" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="581f9efa5899d54690a7c1581fb8121e.png" xmlns="">034yyd2QRq0izjcNUlzc_ng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

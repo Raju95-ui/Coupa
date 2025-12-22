@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6lNH5iNlZE2qbv1FUskQWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="201dda70-0882-4add-a4ca-86e3c3ae83e2" CvElementArea="603, 500, 27, 28" CvType="ArrowButton" DesignTimeRectangle="603, 501, 26, 26" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Next, January 2026' parentid='ui-datepicker-div' tag='SPAN' /&gt;" Guid="1e886d76-f062-4c36-a4d7-7359da2582b1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="059be1a93058bdafede456dd63f402bd.png" xmlns="">0PSzno9HgZEuwa2FuWgogBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

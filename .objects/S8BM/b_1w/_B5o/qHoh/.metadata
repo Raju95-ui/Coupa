@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Inventory Shipping Supp…",
+  "Type": "Element",
+  "Id": "qHohjROBcUyBG67vwS4OdQ",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/qHohjROBcUyBG67vwS4OdQ",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/_B5oUe715kuoE5bt6oL0Jw",
+  "Created": "2025-12-22T06:54:53.3295537Z",
+  "Updated": "2025-12-22T06:54:53.3295537Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

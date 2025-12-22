@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ik-0v04DS0W6omOxW7LrBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="e2bb2511-ceed-4b1e-8092-46d5a4d6c164" CvElementArea="411, 224, 236, 31" CvType="InputBox" DesignTimeRectangle="412, 226, 233, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Filter By' name='conditions[926131][col_key]' tag='SELECT' type='' class='cond_col_select' aaname='Filter By' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="66be0a57-0848-41e1-8285-d20c99bdb143" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e2bb2511-ceed-4b1e-8092-46d5a4d6c164" CvTextArea="355, 232, 54, 16" CvTextArgument="Filter By" CvType="Text" DesignTimeRectangle="356, 232, 52, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Filter By' type='' tag='LABEL' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Filter By' /&gt;" Guid="34afd1d7-8173-46aa-9429-ebfdfba78f3e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="964c4e5822b29d25b61b103ceffd0387.png" xmlns="">0Qq8sAq91IUqYpoRGpM5SqQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
