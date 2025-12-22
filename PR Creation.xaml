@@ -544,6 +544,9 @@
               </uix:NClick.Target>
             </uix:NClick>
             <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Delay_14" />
+            <Delay Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_28" />
+            <Delay Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_27" />
+            <Delay Duration="00:00:05" sap2010:WorkflowViewState.IdRef="Delay_26" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
