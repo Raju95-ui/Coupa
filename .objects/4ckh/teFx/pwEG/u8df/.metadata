@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Filter Text",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "u8dfQ1XufUCu7ccugmjmXw",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/u8dfQ1XufUCu7ccugmjmXw",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-19T10:11:07.8404116Z",
+  "Updated": "2025-12-19T10:11:07.8404116Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

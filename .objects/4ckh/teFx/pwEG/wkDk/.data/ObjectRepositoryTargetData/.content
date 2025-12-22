@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="k7RnLRowmkultg1zbkLEpw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="aaafa100-e0ff-4041-af00-06c32f94b529" CvElementArea="1162, 391, 25, 24" CvType="Icon" DesignTimeRectangle="1166, 394, 18, 18" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Choose an Address' parentid='shipTo' tag='IMG' /&gt;" Guid="3e062446-340f-4d11-963e-52634d85a8b9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVEhL3ZNNTxNRFIa7MnHt1jU7fwF7l+79KUogEKwGDSbIQkIM0sSP2I/QJpjYVCAkKhJiC8iHQVsLnXZmKrad0k7pTKcvd27PdKjT0KmRjW9yk/a95zz33HPPeHBJ+s/B+4KKmaiEOy+O+BoPCFjdLUNrNCnCliuwwfL8H4/bwIfhLKbfihh+neH/H4VzKFQaFN2SK3Dw028OmIzkIJd0cgHdMA9s7U0sZFHX7cp7gsWixhPH3mSgqJ1VWZpfzvOY5a8KOS7A0USJJ63s2El/6ris85ipRZEcF+DQWuuq38UaOd11jz3kCOu5pZ7gd1RxPFUhx6kG6/XQSzYlfoEcF+DNn1UOnlvKk+OUFeNbsWN6gs1q7gcFnvhhv0yuLamk8Yc195PSKbkuwHsZFXfZNc1EcwXY6MVTVe4vbSu8r6Zv/j6vnuDnNEqjrKpn7+X2Adbystt8STr73x1s6Pi1cBvqQQQ1rYnZmMzn2VS2oGH94ASxrRI2flT4R9JNDnBTVyG9uom014PDiauoSwna6U8dYKNWhOgb5FBrZZ5cZ4ddPMPd1AYbFRnZ2Rsd0PSDK6h+C1FEf2qDlc+THdCjx9dwKqzRbv8614omZP8tDhWeDqChHJL/d3I83r/SJYGBM1JtKxT2qqnnAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="aaafa100-e0ff-4041-af00-06c32f94b529" CvTextArea="964, 392, 62, 13" CvTextArgument="* Address" CvType="Text" DesignTimeRectangle="880, 390, 146, 28" FuzzySelectorArgument="&lt;webctrl parentid='shipTo' tag='SPAN' type='' class='group_label label_readonly' aaname='Address' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='*Address' /&gt;" Guid="541cc1a4-0175-4d12-ad21-8f45a74941b1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="265ba3e5186f5ca5a6a266ccdabb297e.png" xmlns="">0nb3_ecTtmUeDpwTNgGaWhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

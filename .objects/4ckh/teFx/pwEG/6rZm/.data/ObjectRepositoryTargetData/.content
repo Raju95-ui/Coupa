@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="35BCJtIddEy8sxsmaf3wFw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="61fe262f-1468-4a79-8330-e5e4f4ebf351" CvElementArea="1605, 88, 45, 40" CvType="Icon" DesignTimeRectangle="1613, 103, 16, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='svgIcon' css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' tag='svg' /&gt;" Guid="7dfc6339-5114-432e-9666-5b31f79ecdd2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFfSURBVDhPY3j/4eN/cvADZeX/9/n5MTDZBj6vr6euge9fvf7/UF8ft4FPn7/4v2D56v8Ll6/5//jpM0wDsODXO3b+vy8oiN3Au/cf/g+OTwPj1IKy/6/fvsMwABt+c/bc/8f29pgGwvCjJ8/+hyZm/O+dOgvsYkJ46Zr1/98CLX/R2/v/SVQU9jCsbumCu5YQBln+/OUruF6sBq7csBmrZmy4pWcSil6sBt6+ew+rZmz4wOHjKHqxGgjCOWU1WA1AxvFZhf/fvv+Aog+ngbMXLcNqCDJetWELhj6cBp48ewGs6fqtO1jlcWGcBr599x7s7aySqv+VzR0YeOrchVj14TQQhO/cf/B/0uz5WA0EYeTkAsN4Ddy+e///PQePYIiDctHydRv/n7t0BUMOr4GgMIzLzMcQP3X2PFiusasfQw6vgVt37f2/9xAOF67d+P/8pasYcngNJAcPdgM//gcAY0A5TdcSePkAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f05d37de97c5788e9790764abddb9c0a.png" xmlns="">05eJGR2KuN0GOnU43ElG9xg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Filter By",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "ir-Sjz7k40WIvxkJLNhVqA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/ir-Sjz7k40WIvxkJLNhVqA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-19T10:10:09.5144975Z",
+  "Updated": "2025-12-19T10:10:09.5144975Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

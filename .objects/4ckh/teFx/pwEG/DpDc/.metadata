@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Prd Line",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "DpDcI-Kc1EOZ3fSo1LCf1A",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/DpDcI-Kc1EOZ3fSo1LCf1A",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-22T06:57:28.9352028Z",
+  "Updated": "2025-12-22T06:57:28.9352028Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

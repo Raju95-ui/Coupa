@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IDMyT2NrVkWRMVs0PpVMkA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="6ff1e566-b433-4c37-9a7d-d0be568758ba" CvElementArea="398, 352, 109, 28" CvTextArea="411, 360, 83, 13" CvTextArgument="Edit Selected" CvType="Button" DesignTimeRectangle="400, 360, 105, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='adjust_all' tag='SPAN' type='' class='' aaname='Edit Selected' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Edit Selected' /&gt;" Guid="6c4d5f10-9710-4e2f-ba8b-57eb2b36baec" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6ff1e566-b433-4c37-9a7d-d0be568758ba" CvElementArea="398, 352, 109, 28" CvTextArea="411, 360, 83, 13" CvTextArgument="Edit Selected" CvType="Button" DesignTimeRectangle="399, 354, 107, 25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='adjust_all' tag='BUTTON' type='' class='button small clickable-strong-disable' aaname='Edit Selected' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Edit Selected' /&gt;" Guid="a59d6f88-a106-4c5e-8d49-9e1c356e33be" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6c41bf2d541b57391605bd29b2de90a5.png" xmlns="">03JkXGE2bkk-ZXVy5svdmtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

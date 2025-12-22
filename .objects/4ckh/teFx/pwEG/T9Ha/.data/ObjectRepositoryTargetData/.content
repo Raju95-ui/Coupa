@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ft2VkrgtIEKXS8aFDrQDdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="6c524bd0-bef0-444e-b996-d9d9b8b3c681" CvElementArea="398, 504, 211, 31" CvType="InputBox" DesignTimeRectangle="402, 507, 207, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisitionBulkEditFormSelector_38' tag='INPUT' type='text' class='ComboBox__input' aaname='Select a field' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="41da1f96-efd2-4b16-a987-7fd6e6d267f6" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6c524bd0-bef0-444e-b996-d9d9b8b3c681" CvTextArea="399, 484, 80, 13" CvTextArgument="Select a field" CvType="Text" DesignTimeRectangle="400, 432, 235, 70" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='requisition_bulk_edit_form' tag='LABEL' type='' class='group_label' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Select a field' /&gt;" Guid="fa20a8f4-9b3a-48ba-a2e4-8f94f529d53b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d4635d51d05e5e78c81d68afb8613a31.png" xmlns="">0D2GzG0wdbUaEVcaM6CyUyw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

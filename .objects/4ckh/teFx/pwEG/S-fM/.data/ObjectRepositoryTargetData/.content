@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rdQyElu9mEa5yUol8Mo6HA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="9d5b56f7-2e44-4644-a463-7f72612ee24f" DesignTimeRectangle="600, 664, 29, 25" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='ui-datepicker-div' tag='TABLE' /&gt;&lt;webctrl aaname='31' tableRow='6' tag='A' /&gt;" Guid="98ac39eb-c3a9-44d4-aea0-7658e8325820" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1c41695dc7f1c0b4f050039af8a6b9cc.png" xmlns="">0sjMTNw-9S0KLh0t7be9s9w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

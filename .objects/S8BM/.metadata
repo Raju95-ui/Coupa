@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge Coupa Home(1)",
+  "Type": "App",
+  "Id": "S8BM8-P-W0Gk9nCTYaStCA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/S8BM8-P-W0Gk9nCTYaStCA",
+  "Created": "2025-12-19T10:39:30.0319727Z",
+  "Updated": "2025-12-19T10:39:30.0319727Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

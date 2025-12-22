@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="HGIckqlS7EOd4V2UFZSodg" Reference="RfWQQgmbUEqfpiig5DfmmA/_B5oUe715kuoE5bt6oL0Jw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1744, 1084" BrowserType="Edge" ContentHash="SboKTM50eEK04TY-bYSJtQ" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIFSURBVDhPjVNPSxtBHJ2PkPoJ7K1HCQoeW4QePHnswYNQ8eyhH8BjL6XSsvVQiwnUIiKihypBilspVlJaRcRidM3EtGlWTXbX3awbs8n4e7OzIk0qffBgdub33u/P7LB/IlNZIu4wzZggTtK6mziuTu+AZnCi/mDD+vaCX2bZG8Mnuv1bzkHiU1WoqA6IMupsmmfJQAyslF1BGN2seE83qwHWfR9NE2eyojaQeHjXzRf8Zm4y54lHK2YIkX52JexGS+T9EEJB1Xhs2URLI0pJ0IwRNnX8vGu+dLJVvZKZ/waMwJwX8oVyfZ8MBLEH4iFV1g1fHnhK1o7lUhD2rprnLF18pdITFv48Ye9//Xy2bfvcb6rQdqC1x7N7t5PtoHf0Iw5rIVdxYttpUM+djUpBM+hdPT1nb/kUGTyEgQ0DXNHA2qkN5+4PRTlAwKIBAhN7rpjJ+3IdtoSrdGQQQzNSqiyR4lHg+lmdyq7JNfZwlnjH6z0bFgYI2rEYf5sMuJcuyAn6YSu4P1sMkou/pcORFzpxDF3lF5ld3kJkgAMLfQ1+vziCYCxrWbFg12mUscfmSj/iPaIS30amksIskl8dl6VP9Dg4+blae1241Okce7j2PLHDu0BA1BsC47YsGKv9O94CEAWCCRLGPxi+8RIxdbr3/4VmwGSdGPWKgWUqQ3J9A8auAaRsLO5FtRRgAAAAAElFTkSuQmCC" Reference="RfWQQgmbUEqfpiig5DfmmA/_B5oUe715kuoE5bt6oL0Jw" Selector="&lt;html app='msedge.exe' title='Review Cart' /&gt;" Url="https://amazon-test.coupahost.com/requisition_headers/11854130/edit" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="0-0mjjLFKxkGCHUbZXLfr2w" xmlns="">0-0mjjLFKxkGCHUbZXLfr2w</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

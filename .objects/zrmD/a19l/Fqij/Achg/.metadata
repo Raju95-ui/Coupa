@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Software and Hardware M…",
+  "Type": "Element",
+  "Id": "AchgYx7CEkmWdwFnWcPC5Q",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/AchgYx7CEkmWdwFnWcPC5Q",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/FqijeBfY00alV_TXHrcwzg",
+  "Created": "2025-12-22T08:58:14.9748596Z",
+  "Updated": "2025-12-22T08:58:14.9748596Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

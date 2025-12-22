@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="F-dYbNVe_Ui-3wSf0p2k4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="4aed4a0c-426c-4cf2-acdd-3e028e6d448e" CvElementArea="651, 593, 393, 31" CvType="InputBox" DesignTimeRectangle="662, 595, 210, 27" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Inventory Shipping Supplies (12300)' tag='LI' /&gt;" Guid="1cff6b73-d695-428e-8a1a-15c81250b0f2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="19dcf275a363e230ae87a35a0f453c8b.png" xmlns="">0k7mnlQy5DUeL6ECaJizeag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

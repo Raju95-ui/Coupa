@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eQ5TMnT4G0ulaJrrDKUkgQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="e06cbbab-83f8-436a-8d8c-cb12b2d766e2" CvElementArea="1262, 558, 89, 31" CvTextArea="1287, 566, 39, 17" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="1289, 566, 36, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='reqBulkEditFormFieldApplyButton' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Apply' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Apply' check:innerText='Apply' /&gt;" Guid="93e0172c-f6a2-4e77-b7bf-d8b51b10cff6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e06cbbab-83f8-436a-8d8c-cb12b2d766e2" CvElementArea="1262, 558, 89, 31" CvTextArea="1287, 566, 39, 17" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="1264, 559, 86, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='reqBulkEditFormFieldApplyButton' tag='BUTTON' type='button' class='button primary reqBulkEditFormFieldActionButton' aaname='Apply' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Apply' /&gt;" Guid="708f3b35-d8ae-408a-ad42-de43b8a8e72b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0a58bb304d79301d1dff244fcf45da97.png" xmlns="">0DZSm_yRqtUqKzHqpymYohA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="G6lj-0iL4Uu4K1OxNpKWlQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="605c96a3-8365-4f5b-9e7a-9c7fbc9076a7" CvElementArea="658, 624, 384, 28" CvType="InputBox" DesignTimeRectangle="659, 626, 361, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='*Account. Inventory Shipping Supplies (12300)' aria-role='combobox' tag='INPUT' type='text' class='' aaname='' fuzzylevel:aria-label='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ea79a182-846a-412d-ae9a-2d3c7af6a678" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="605c96a3-8365-4f5b-9e7a-9c7fbc9076a7" CvTextArea="581, 636, 62, 13" CvTextArgument="- Prd Line" CvType="Text" DesignTimeRectangle="579, 636, 63, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Prd Line' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Prd Line' /&gt;" Guid="0b8ad15c-ecdc-49c4-9fd2-b4bfb2aaa07e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f581fd9d215a626e28fd4e998da2fdcb.png" xmlns="">0Mn6fgbF1_kOYE57Wb4Mbtg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

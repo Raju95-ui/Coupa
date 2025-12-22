@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Alejandro",
+  "Type": "Element",
+  "Id": "HnS5AYZsdECB7y-xhg7BxA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/HnS5AYZsdECB7y-xhg7BxA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-19T10:06:43.4689724Z",
+  "Updated": "2025-12-19T10:06:43.4689724Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

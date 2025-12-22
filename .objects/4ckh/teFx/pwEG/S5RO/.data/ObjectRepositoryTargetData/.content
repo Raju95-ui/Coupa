@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KX8WTMatwUWxr7PMZFHGLw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="2a39d675-3a25-4b41-a0c6-536944f8fab1" CvTextArea="661, 592, 265, 15" CvTextArgument="Software and Hardware Maintenance (64452)" CvType="Text" DesignTimeRectangle="656, 587, 389, 25" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='option' tag='LI' aaname='Software and Hardware Maintenance ()' innertext='Software and Hardware Maintenance (64452)' /&gt;" Guid="a2b15d20-5f87-4ea4-9421-b16fbab3b6c2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2a39d675-3a25-4b41-a0c6-536944f8fab1" CvTextArea="582, 534, 62, 13" CvTextArgument="- Account" CvType="Text" DesignTimeRectangle="579, 534, 63, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Account' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Account' /&gt;" Guid="52ab4177-4be3-4c9e-b24b-6e2d10718eb9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e84fba7f319a0d95bcdfa72d9f04c6a8.png" xmlns="">0VpveDBG0mkakGUCdcQGCzg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

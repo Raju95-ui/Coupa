@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QnZ2Ps8pykSnysxhUG7fNA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="8246d783-2cca-4a21-b47d-e06bc2db9c8f" CvElementArea="937, 224, 146, 31" CvType="InputBox" DesignTimeRectangle="939, 226, 142, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Filter Text' name='conditions[926131][custom_field_6]' tag='INPUT' type='text' class='cond_value_text' aaname='Filter Text' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3b93b4bc-6e61-482d-ae25-01c61f431bb1" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8246d783-2cca-4a21-b47d-e06bc2db9c8f" CvTextArea="874, 232, 63, 13" CvTextArgument="Filter Text" CvType="Text" DesignTimeRectangle="874, 232, 62, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Filter Text' type='' tag='LABEL' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Filter Text' /&gt;" Guid="9331f12f-9588-4827-8121-8ac0c2af3208" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9e394c30f52de2178701f7bcd3bb0f4b.png" xmlns="">0CnDzjN_3YUi5wTWEy0OXLQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
