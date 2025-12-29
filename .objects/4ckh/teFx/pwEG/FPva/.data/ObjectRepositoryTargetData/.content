@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Y-OzFRw4OkegdBw_FN4Phw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="VHNlEAiS40yxOIC-xP0Hnw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="ea3c0e92-1ee2-4b91-a9bd-559b09a00768" CvElementArea="652, 558, 391, 31" CvType="InputBox" DesignTimeRectangle="657, 560, 119, 27" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Payroll - VAR (8307)' tag='LI' /&gt;" Guid="33302b65-48f0-42fc-ae95-800c5fc1bdba" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="665468d58f665849231609adc1ab6c8d.png" xmlns="">0zOyaZ0sj9UeCnixBHapdHw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="951dedc6-9cd8-423b-a657-2b6b330f0ed2" CvElementArea="649, 558, 389, 31" CvType="InputBox" DesignTimeRectangle="657, 560, 119, 27" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Payroll - VAR (8307)' tag='LI' /&gt;" Guid="6d53abbf-2ccb-49b1-962d-b888e031d854" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="951dedc6-9cd8-423b-a657-2b6b330f0ed2" CvTextArea="577, 566, 61, 13" CvTextArgument="- Cost Ctr" CvType="Text" DesignTimeRectangle="575, 566, 62, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Cost Ctr' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Cost Ctr' /&gt;" Guid="c6d51aef-b4df-46ce-80cb-eac8d16b1cac" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="29676690886acba8386236a962ba4b2b.png" xmlns="">0qamRYI0YH02hBaD3vG_e2Q</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">SelectItem</x:String>
   </ObjectRepositoryTargetData.Data>

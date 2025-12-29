@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="test" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="test" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -42,6 +42,10 @@
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>System.Linq.Expressions</x:String>
       <x:String>System.Reflection</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -100,13 +104,497 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="1095,657.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="test" sap:VirtualizedContainerService.HintSize="985,9411" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="522,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="PO request" WorkbookPath="Vendors and PO request for UA-(12).xlsx" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="522,9268" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,9095" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="parent_location" />
+              <Variable x:TypeArguments="x:String" Name="account" />
+              <Variable x:TypeArguments="x:String" Name="costcr" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="486,215" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[parent_location]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentRow("Parent Location").ToString]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[account]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentRow("Account").ToString]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">[costcr]</OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">[CurrentRow("Cost Center").ToString]</InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Coupa Home" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,8816" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,8618" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'What do you need? Start…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Text="Pollibag" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="3ced3a96-6e48-4b05-b690-d97c9fd8ca1c" ContentHash="ULm0auAyd0OqPV6s53TTRw" CvElementArea="47, 310, 595, 48" CvType="InputBox" DesignTimeRectangle="53, 313, 588, 44" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='What do you need? Start your search here' matching:name='fuzzy' fuzzylevel:name='0.0' tag='BUTTON' type='button' innertext='What do you need? Start your search here' check:innerText='What do you need? Start your search here' /&gt;" Guid="ebfd8151-a107-476c-8dbd-625ad3a644fc" InformativeScreenshot="5ff67ed9e9e36f26fe7a9324fdc8ded6.png" Reference="RfWQQgmbUEqfpiig5DfmmA/7ra6HaryCEmvwYIbBN5amQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="3ced3a96-6e48-4b05-b690-d97c9fd8ca1c" CvElementArea="47, 310, 595, 48" CvType="InputBox" DesignTimeRectangle="91, 324, 334, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='homepageWelcomeBannerApp' tag='SPAN' type='' class='welcomeBanner__searchBtnText' aaname='What do you need? Start your search here' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="860d9211-4a77-4a83-9db1-01e0a520083c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:08" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,405" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" InteractionMode="HardwareEvents" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Shortcuts="[d(hk)][k(Enter)][u(hk)]" Version="V5" />
+                    <Delay Duration="00:00:08" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Add'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="ded9cf22-2891-42ec-accd-8bc145f621be" ContentHash="J3ChKkB-ukCPA1_KUnG13g" CvElementArea="1615, 360, 69, 33" CvType="InputBox" DesignTimeRectangle="1617, 362, 45, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Add PAC20789-BR-Polibag PM3' aria-role='button' tag='SPAN' /&gt;" Guid="7744594d-b2d7-40bb-99ac-8dc1aef49838" InformativeScreenshot="581f9efa5899d54690a7c1581fb8121e.png" Reference="RfWQQgmbUEqfpiig5DfmmA/4UsnUCXYkkCjLTiFW_b35Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1246, 271, 437, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='PAC20789-BR-Polibag PM3' aria-role='link' tag='DIV' type='' class='item__title__link' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='PAC20789-BR-Polibag PM3' /&gt;" Guid="293fc31a-5985-41b4-89a2-e5f5103a1193" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'svg(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="61fe262f-1468-4a79-8330-e5e4f4ebf351" ContentHash="35BCJtIddEy8sxsmaf3wFw" CvElementArea="1605, 88, 45, 40" CvType="Icon" DesignTimeRectangle="1613, 103, 16, 16" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='svgIcon' css-selector='body&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg' tag='svg' /&gt;" Guid="7dfc6339-5114-432e-9666-5b31f79ecdd2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFfSURBVDhPY3j/4eN/cvADZeX/9/n5MTDZBj6vr6euge9fvf7/UF8ft4FPn7/4v2D56v8Ll6/5//jpM0wDsODXO3b+vy8oiN3Au/cf/g+OTwPj1IKy/6/fvsMwABt+c/bc/8f29pgGwvCjJ8/+hyZm/O+dOgvsYkJ46Zr1/98CLX/R2/v/SVQU9jCsbumCu5YQBln+/OUruF6sBq7csBmrZmy4pWcSil6sBt6+ew+rZmz4wOHjKHqxGgjCOWU1WA1AxvFZhf/fvv+Aog+ngbMXLcNqCDJetWELhj6cBp48ewGs6fqtO1jlcWGcBr599x7s7aySqv+VzR0YeOrchVj14TQQhO/cf/B/0uz5WA0EYeTkAsN4Ddy+e///PQePYIiDctHydRv/n7t0BUMOr4GgMIzLzMcQP3X2PFiusasfQw6vgVt37f2/9xAOF67d+P/8pasYcngNJAcPdgM//gcAY0A5TdcSePkAAAAASUVORK5CYII=" InformativeScreenshot="f05d37de97c5788e9790764abddb9c0a.png" Reference="RfWQQgmbUEqfpiig5DfmmA/6rZmDH7T7kCTLx0AfziOAw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Review Cart'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="8facd436-94a9-41c0-84ef-fd341e1c447e" ContentHash="-cxsggOsKEmW8faQ4LzIJA" CvElementArea="1567, 338, 120, 32" CvTextArea="1589, 347, 77, 13" CvTextArgument="Review Cart" CvType="Button" DesignTimeRectangle="1569, 340, 116, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Review Cart' parentid='reactPopover__portal' tag='A' /&gt;" Guid="f851a6b7-df9c-41a8-81f9-9fadcd53f20d" InformativeScreenshot="4b531284b9e8ae094aa8a4634e1d37c5.png" Reference="RfWQQgmbUEqfpiig5DfmmA/NIEmRim2m0u8jQvt6m2kyg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'On Behalf Of'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Text="Alejandro mej" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="8d13d194-6a35-4f60-bc21-65237da81fcf" ContentHash="D8sNStsVX0eu_zuaTiVhvw" CvElementArea="541, 421, 282, 30" CvType="InputBox" DesignTimeRectangle="542, 422, 280, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_header_on_behalf_of' tag='INPUT' type='text' class='behalf' placeholder='Start typing name' aaname='On Behalf Of' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="87328d7b-ab8a-4d27-8474-074a9593b99a" InformativeScreenshot="8c0715659bbda3228071e1c7953dd96a.png" IsResponsive="True" Reference="RfWQQgmbUEqfpiig5DfmmA/H0RHqIGQ50KpGSe-0ZQv7w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="8d13d194-6a35-4f60-bc21-65237da81fcf" CvTextArea="452, 429, 82, 13" CvTextArgument="On Behalf Of" CvType="Text" DesignTimeRectangle="387, 427, 146, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='topForm' tag='LABEL' type='' class='group_label' aaname='On Behalf Of' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='On Behalf Of' /&gt;" Guid="68c14e2f-4c26-4769-98f3-b075b188814e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Alejandro'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="3fc24790-b00f-4153-9a75-4a95381977f7" ContentHash="4nhmRxq9c0ekpHUbgxjz8A" CvTextArea="548, 478, 57, 13" CvTextArgument="Alejandro" CvType="Text" DesignTimeRectangle="549, 478, 55, 14" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='ui-id-3' tag='B' /&gt;" Guid="c10e4bba-25c9-442d-ab2f-7ab000b77d52" InformativeScreenshot="ad345b33b97a2ddb2ea235cee736a91e.png" Reference="RfWQQgmbUEqfpiig5DfmmA/HnS5AYZsdECB7y-xhg7BxA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '*Address'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="aaafa100-e0ff-4041-af00-06c32f94b529" ContentHash="k7RnLRowmkultg1zbkLEpw" CvElementArea="1162, 391, 25, 24" CvType="Icon" DesignTimeRectangle="1166, 394, 18, 18" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Choose an Address' parentid='shipTo' tag='IMG' /&gt;" Guid="3e062446-340f-4d11-963e-52634d85a8b9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHkSURBVEhL3ZNNTxNRFIa7MnHt1jU7fwF7l+79KUogEKwGDSbIQkIM0sSP2I/QJpjYVCAkKhJiC8iHQVsLnXZmKrad0k7pTKcvd27PdKjT0KmRjW9yk/a95zz33HPPeHBJ+s/B+4KKmaiEOy+O+BoPCFjdLUNrNCnCliuwwfL8H4/bwIfhLKbfihh+neH/H4VzKFQaFN2SK3Dw028OmIzkIJd0cgHdMA9s7U0sZFHX7cp7gsWixhPH3mSgqJ1VWZpfzvOY5a8KOS7A0USJJ63s2El/6ris85ipRZEcF+DQWuuq38UaOd11jz3kCOu5pZ7gd1RxPFUhx6kG6/XQSzYlfoEcF+DNn1UOnlvKk+OUFeNbsWN6gs1q7gcFnvhhv0yuLamk8Yc195PSKbkuwHsZFXfZNc1EcwXY6MVTVe4vbSu8r6Zv/j6vnuDnNEqjrKpn7+X2Adbystt8STr73x1s6Pi1cBvqQQQ1rYnZmMzn2VS2oGH94ASxrRI2flT4R9JNDnBTVyG9uom014PDiauoSwna6U8dYKNWhOgb5FBrZZ5cZ4ddPMPd1AYbFRnZ2Rsd0PSDK6h+C1FEf2qDlc+THdCjx9dwKqzRbv8614omZP8tDhWeDqChHJL/d3I83r/SJYGBM1JtKxT2qqnnAAAAAElFTkSuQmCC" InformativeScreenshot="265ba3e5186f5ca5a6a266ccdabb297e.png" Reference="RfWQQgmbUEqfpiig5DfmmA/wkDkTPal2EOYxJWMr1EGQg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="aaafa100-e0ff-4041-af00-06c32f94b529" CvTextArea="964, 392, 62, 13" CvTextArgument="* Address" CvType="Text" DesignTimeRectangle="880, 390, 146, 28" FuzzySelectorArgument="&lt;webctrl parentid='shipTo' tag='SPAN' type='' class='group_label label_readonly' aaname='Address' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='*Address' /&gt;" Guid="541cc1a4-0175-4d12-ad21-8f45a74941b1" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Advanced'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="5024b34a-2d70-4097-b29d-f69552f4e92c" ContentHash="UqUWVO1DDUKuqvP70gQMzA" CvElementArea="835, 140, 90, 28" CvTextArea="848, 147, 64, 13" CvTextArgument="Advanced" CvType="Button" DesignTimeRectangle="837, 147, 86, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='si_picker_address' tag='SPAN' /&gt;" Guid="a02673fd-c91b-402c-b3fb-f2f5593376fa" InformativeScreenshot="c617c9ceeebeaa5202a00ffdf412440b.png" Reference="RfWQQgmbUEqfpiig5DfmmA/DK8-vktuvk2a4Xj2suBZbA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                    <uix:NSelectItem DisplayName="Select Item 'Filter By'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Parent Location" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="31">
+                          <x:String>Address Line 3</x:String>
+                          <x:String>Address Line 4</x:String>
+                          <x:String>AMOC Approval Group</x:String>
+                          <x:String>Approval Chain Priority</x:String>
+                          <x:String>Attention</x:String>
+                          <x:String>City</x:String>
+                          <x:String>Company Code</x:String>
+                          <x:String>Cost Center</x:String>
+                          <x:String>Country/Region</x:String>
+                          <x:String>Deprecating Ship To</x:String>
+                          <x:String>Id</x:String>
+                          <x:String>Inventory Org ID</x:String>
+                          <x:String>Line 1</x:String>
+                          <x:String>Line 2</x:String>
+                          <x:String>Line 3</x:String>
+                          <x:String>Line 4</x:String>
+                          <x:String>Location Code</x:String>
+                          <x:String>Mirror_Country</x:String>
+                          <x:String>Name</x:String>
+                          <x:String>Parent Inventory Org ID</x:String>
+                          <x:String>Parent Location</x:String>
+                          <x:String>PeopleSoft Location</x:String>
+                          <x:String>Postal Code</x:String>
+                          <x:String>Procurement Buyer Approval Group</x:String>
+                          <x:String>Rule Condition</x:String>
+                          <x:String>Shipping Terms</x:String>
+                          <x:String>Sourcing Local Buyer</x:String>
+                          <x:String>State</x:String>
+                          <x:String>State ISO Code</x:String>
+                          <x:String>TAX CNPJ</x:String>
+                          <x:String>Tax Registrations</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="e2bb2511-ceed-4b1e-8092-46d5a4d6c164" ContentHash="Ik-0v04DS0W6omOxW7LrBg" CvElementArea="411, 224, 236, 31" CvType="InputBox" DesignTimeRectangle="412, 226, 233, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Filter By' name='conditions[926131][col_key]' tag='SELECT' type='' class='cond_col_select' aaname='Filter By' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="66be0a57-0848-41e1-8285-d20c99bdb143" InformativeScreenshot="964c4e5822b29d25b61b103ceffd0387.png" Reference="RfWQQgmbUEqfpiig5DfmmA/ir-Sjz7k40WIvxkJLNhVqA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="e2bb2511-ceed-4b1e-8092-46d5a4d6c164" CvTextArea="355, 232, 54, 16" CvTextArgument="Filter By" CvType="Text" DesignTimeRectangle="356, 232, 52, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Filter By' type='' tag='LABEL' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Filter By' /&gt;" Guid="34afd1d7-8173-46aa-9429-ebfdfba78f3e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Filter Text'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Text="[parent_location]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="8246d783-2cca-4a21-b47d-e06bc2db9c8f" ContentHash="QnZ2Ps8pykSnysxhUG7fNA" CvElementArea="937, 224, 146, 31" CvType="InputBox" DesignTimeRectangle="939, 226, 142, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='Filter Text' name='conditions[926131][custom_field_6]' tag='INPUT' type='text' class='cond_value_text' aaname='Filter Text' matching:aria-label='fuzzy' fuzzylevel:aria-label='0.0' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3b93b4bc-6e61-482d-ae25-01c61f431bb1" InformativeScreenshot="9e394c30f52de2178701f7bcd3bb0f4b.png" IsResponsive="True" Reference="RfWQQgmbUEqfpiig5DfmmA/u8dfQ1XufUCu7ccugmjmXw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="8246d783-2cca-4a21-b47d-e06bc2db9c8f" CvTextArea="874, 232, 63, 13" CvTextArgument="Filter Text" CvType="Text" DesignTimeRectangle="874, 232, 62, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Filter Text' type='' tag='LABEL' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Filter Text' /&gt;" Guid="9331f12f-9588-4827-8121-8ac0c2af3208" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_11" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="5fa7822b-1c31-4be3-b884-ab7db7910d7c" ContentHash="sBuayL4l20Gt7hUB1CXgbg" CvElementArea="1286, 264, 88, 31" CvTextArea="1308, 273, 45, 13" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1289, 273, 83, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='search_advanced_button_picker_address' tag='SPAN' type='' class='' aaname='Search' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="126d486a-7e18-464e-ad83-46dbb9e872c3" InformativeScreenshot="a06422fa6a9c171285c8a1f0259959fc.png" Reference="RfWQQgmbUEqfpiig5DfmmA/D1hkKmNh3ka1Uo1OUq_zHA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="5fa7822b-1c31-4be3-b884-ab7db7910d7c" CvElementArea="1286, 264, 88, 31" CvTextArea="1308, 273, 45, 13" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="1288, 266, 85, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='search_advanced_button_picker_address' tag='BUTTON' type='submit' class='button primaryBtn s-advSearch' aaname='Search' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Search' /&gt;" Guid="fcbaf87a-6bc0-4849-880a-0654cff24ed8" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_12" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Choose'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="e8b5d1ee-5ef7-46e5-be60-40563750b831" ContentHash="nWQ87CFYI0-LQxRNnQi5Jg" CvElementArea="1254, 332, 120, 31" CvTextArea="1303, 341, 49, 13" CvTextArgument="Choose" CvType="Button" DesignTimeRectangle="1257, 341, 115, 15" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='picker_address_table_tag' tag='TABLE' /&gt;&lt;webctrl aaname=' Choose' tableRow='2' tag='SPAN' /&gt;" Guid="3131a6a0-a5db-4070-8d0d-a6442999f904" InformativeScreenshot="f7d41905cc31b961568f72c760f4f88b.png" Reference="RfWQQgmbUEqfpiig5DfmmA/H4yzjG2jkUmqNq951vn0qg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_13" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="d3711f35-a845-417f-98ec-13eb82c5e70a" ContentHash="M9WkDNTUUUyeMzidxXF83A" CvElementArea="1261, 484, 25, 24" CvType="Icon" DesignTimeRectangle="1264, 487, 18, 18" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='requisition_line_table_tag' tag='TABLE' /&gt;&lt;webctrl aaname='Choose an account' tableRow='1' tag='IMG' /&gt;" Guid="3f8dd7ac-b61b-46aa-a582-4c4e6034abca" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHNSURBVEhL3ZNJS8NAFMd7Erx69OrNL+DZm2e/jYriVqWKoCgo4goVa2sLCmqLtFUQUaulFmxdqKZNYiZpEHpwtz5nJiZpnEJS0IuHPyTvzfvN28YFqgp/oX8OzmYQzGwJ0OEtUA34edhPIHiTi8xZR+ByUQV/TDSAIyEeJjcF6F7l6f9oSIAH3gp3BF6P31PAGAbKnAl4V8iFms8T5OEVmT5bsHSn0MA+XwFKIlsy0VJEqyZ2LBk2W3DkUKJB8RMz6KfUvHb5xIZg2GzBwT2t1Jsruapf1yAeZA/uuf5vCw5/Z5xMo6p+og/c664VvCVrNYBTGEjAC2Gxqp9IP7McqaEVJJshv7ZmB6dsnxGn0MESf+5aMey24ExGhk5cJgkkCuDVS6Zlao8eSbSvxE6+K+NswYvfq9SLs5rbMV+dLneAh7Nztv/VwQqCoq8dns688IxUmN0W6D4Tn3irwHFSgl2cYSKF6CNh4rEY8CfiAS23Aud2Qd5TD6+XcYvfqSzgspgDab6FQnXx4434MnPaTmWAy4UsiNPNFig3XAePiSUmyIkMcCnab4EWxhrg5SLMBDhVRSuKIHvbKFSYaoIPLmU5WKuY4f2W/giswhfPz+9FU41dLwAAAABJRU5ErkJggg==" InformativeScreenshot="a2d6e4fbb02074bbc214aef357c7285f.png" Reference="RfWQQgmbUEqfpiig5DfmmA/FtjQ9hjBo0KesblDIKXzGw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_19" />
+                    <uix:NSelectItem DisplayName="Select Item 'Choose Chart Of Accounts'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="5B A100 ROW Servicos De Dados Brasil Ltda." ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="50">
+                          <x:String>4U Amazon Services Europe SARL (UK) CARs</x:String>
+                          <x:String>4W Amazon Services Europe SARL (IT)</x:String>
+                          <x:String>4W Amazon Services Europe SARL (IT) CARs</x:String>
+                          <x:String>4X Quidsi Logistics LLC</x:String>
+                          <x:String>4Y AMAZON MEDIA EU SARL</x:String>
+                          <x:String>4Y AMAZON MEDIA EU SARL (CARs)</x:String>
+                          <x:String>4Z Amazon Pay (India) Private Limited</x:String>
+                          <x:String>4Z Amazon Pay (India) Private Limited (CARs)</x:String>
+                          <x:String>4Z Amazon Pay (India) Private Limited(GREF)</x:String>
+                          <x:String>4Z Amazon Pay (India) Private LTD (CARs Seg137)</x:String>
+                          <x:String>51 Amazon Deutschland Services (CARs by Location)</x:String>
+                          <x:String>51 Amazon Deutschland Services GmbH</x:String>
+                          <x:String>51 Amazon Deutschland Services GmbH (CARs)</x:String>
+                          <x:String>51 Amazon Deutschland Services GmbH (GREF)</x:String>
+                          <x:String>53 Amazon Spain Fulfillment, S.L.</x:String>
+                          <x:String>53 Amazon Spain Fulfillment, S.L. (AMZL CARs)</x:String>
+                          <x:String>53 Amazon Spain Fulfillment, S.L. (CARs only)</x:String>
+                          <x:String>53 Amazon Spain Fulfillment, S.L. (CARs Seg137)</x:String>
+                          <x:String>55 Amazon Corporate Services Pty Ltd.</x:String>
+                          <x:String>55 Amazon Corporate Services Pty Ltd. (CARs)</x:String>
+                          <x:String>59 Amazon Logistik GmbH</x:String>
+                          <x:String>59 Amazon Logistik GmbH (CARs only)</x:String>
+                          <x:String>59 Amazon Logistik GmbH (CARs Seg137)</x:String>
+                          <x:String>5B A100 ROW Servicos De Dados Brasil (CARs Seg138)</x:String>
+                          <x:String>5B A100 ROW Servicos De Dados Brasil Ltda.</x:String>
+                          <x:String>5B A100 ROW Servicos De Dados Brasil Ltda. (CARs)</x:String>
+                          <x:String>5B A100 ROW Servicos De Dados Brasil Ltda. (GREF)</x:String>
+                          <x:String>5B A100 ROW Servicos De Dados Brasil Ltda. (OTIT)</x:String>
+                          <x:String>5C Amazon Support Services Costa Rica CARsSeg138</x:String>
+                          <x:String>5C Amazon Support Services Costa Rica SRL</x:String>
+                          <x:String>5C Amazon Support Services Costa Rica SRL CARs USD</x:String>
+                          <x:String>5C Amazon Support Services Costa Rica SRL(CARs)CRC</x:String>
+                          <x:String>5C Amazon Support Services Costa Rica SRL(CARs)EUR</x:String>
+                          <x:String>5C Amazon Support Services CRC SRL (GREF)</x:String>
+                          <x:String>5D Amazon Media EU (LUX DE)</x:String>
+                          <x:String>5D Amazon Media EU SARL (DE)</x:String>
+                          <x:String>5E Amazon Koblenz GmbH</x:String>
+                          <x:String>5E Amazon Koblenz GmbH (CARs only)</x:String>
+                          <x:String>5E Amazon Koblenz GmbH (CARs Seg137)</x:String>
+                          <x:String>5F Amazon Media EU SARL (FR)</x:String>
+                          <x:String>5G Amazon Fulfillment Germany GmbH</x:String>
+                          <x:String>5G Amazon Fulfillment Germany GmbH (CARs only)</x:String>
+                          <x:String>5G Amazon Fulfillment Germany GmbH (CARs Seg137)</x:String>
+                          <x:String>5H Amazon Logistik Werne GmbH</x:String>
+                          <x:String>5H Amazon Logistik Werne GmbH (CARs only)</x:String>
+                          <x:String>5H Amazon Logistik Werne GmbH (CARs Seg137)</x:String>
+                          <x:String>5J Abebooks Inc.</x:String>
+                          <x:String>5J Abebooks Inc. (CARs Seg137)</x:String>
+                          <x:String>5J Abebooks Inc. (CARs Seg138)</x:String>
+                          <x:String>5J Abebooks Inc. (GREF)</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="e066bb88-c1f1-4b47-aeb0-4a68b620b360" ContentHash="9TXfPJpLokugg6etzQABQA" CvElementArea="653, 428, 389, 30" CvType="InputBox" DesignTimeRectangle="653, 429, 388, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='account_account_type_id' tag='SELECT' type='' class='account-type-control' aaname='Choose Chart Of Accounts' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="060a2dfa-c1cc-4d84-bdf1-1fbc1a180574" InformativeScreenshot="66ca2447d5cf8056ea54f1037f4698aa.png" Reference="RfWQQgmbUEqfpiig5DfmmA/f2rZSkkNdU6nWPpPEvzjPQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="e066bb88-c1f1-4b47-aeb0-4a68b620b360" CvTextArea="476, 436, 167, 13" CvTextArgument="Choose Chart Of Accounts" CvType="Text" DesignTimeRectangle="412, 434, 238, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Choose Chart Of Accounts' class='group_label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Choose Chart Of Accounts' /&gt;" Guid="a73ad96b-9dea-4c1f-97ab-cefa01af4e4c" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_20" />
+                    <Sequence DisplayName="Cost Ctr" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cost Ctr'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="87546b0c-fbb4-45a0-a81f-c0b1dcd6e77b" ContentHash="Yr6RZYLInU65J1kiR8Shew" CvElementArea="651, 558, 390, 32" CvType="InputBox" DesignTimeRectangle="662, 560, 354, 27" ElementType="List" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='chosen-scopes' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;span&amp;gt;ul' idx='3' tag='UL' /&gt;" Guid="e2706b80-2ade-466c-8911-52a377424b9b" InformativeScreenshot="50c5aee1d0c4371c837de836a5ad25a3.png" Reference="RfWQQgmbUEqfpiig5DfmmA/FB08QYBaoEGB1ZxXJikLbw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="87546b0c-fbb4-45a0-a81f-c0b1dcd6e77b" CvTextArea="582, 566, 61, 14" CvTextArgument="- Cost Ctr" CvType="Text" DesignTimeRectangle="580, 566, 62, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Cost Ctr' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Cost Ctr' /&gt;" Guid="1b320b2a-ef84-473d-a39c-b19d8d7123ac" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Text="[costcr]" Version="V5">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="57911116-a9af-40c6-aac3-7499d900fa95" ContentHash="b36h3WzPIEGL0ye4HjDvBQ" CvElementArea="657, 588, 384, 28" CvType="InputBox" DesignTimeRectangle="659, 591, 361, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='*Cost Ctr' aria-role='combobox' tag='INPUT' type='text' class='' aaname='' fuzzylevel:aria-label='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="49b8ab3f-2ae9-44e2-b52b-9320921b41aa" InformativeScreenshot="6ce5c8b72d957da4a6da6e3d69bd91b0.png" Reference="RfWQQgmbUEqfpiig5DfmmA/vC_k6ARNbkySjdVoDFb8EQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="57911116-a9af-40c6-aac3-7499d900fa95" CvTextArea="661, 566, 39, 13" CvTextArgument="Select" CvType="Text" DesignTimeRectangle="662, 560, 37, 27" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl aaname='Select' type='' tag='LI' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Select' /&gt;" Guid="2e0d08ee-0cb4-4c39-94c0-9ce9b10944f7" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fulfillment Center - Fi…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="3ef79b66-e30c-471d-aed8-5d5ea50346b8" ContentHash="QoOpBeClAE-Q1kuqhH3MTw" CvTextArea="661, 592, 188, 15" CvTextArgument="Fulfillment Center - Fixed (1290)" CvType="Text" DesignTimeRectangle="662, 592, 187, 16" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='option' tag='LI' aaname='Fulfillment Center - Fixed ()' innertext='Fulfillment Center - Fixed (1290)' /&gt;" Guid="d9f4acdc-6292-4ea5-842f-897bb2242ad7" InformativeScreenshot="f72f6b48689e57ea55994a0c43aa92dd.png" Reference="RfWQQgmbUEqfpiig5DfmmA/vjisiRv58kO0qLt6PO0w5A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="3ef79b66-e30c-471d-aed8-5d5ea50346b8" CvTextArea="661, 592, 188, 15" CvTextArgument="Fulfillment Center - Fixed (1290)" CvType="Text" DesignTimeRectangle="656, 587, 389, 25" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl aria-role='option' tag='LI' type='' class='active-result' aaname='Fulfillment Center - Fixed ()' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Fulfillment Center - Fixed (1290)' /&gt;" Guid="ca67b3dc-f796-400a-a281-25c14d3cbece" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inventory Shipping Supp…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="53151501-1b98-4242-ab88-ac6215c32559" ContentHash="hmvbbM0fqESSYrQYtHnQ0w" CvElementArea="647, 593, 393, 31" CvType="InputBox" DesignTimeRectangle="657, 595, 210, 27" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Inventory Shipping Supplies (12300)' tag='LI' /&gt;" Guid="3570bf8c-a205-49b9-9268-4f624d5ce4aa" InformativeScreenshot="19dcf275a363e230ae87a35a0f453c8b.png" Reference="RfWQQgmbUEqfpiig5DfmmA/nyHM9SCIrUSHu5q22ESnRA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Prd Line'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Text="[account]" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="605c96a3-8365-4f5b-9e7a-9c7fbc9076a7" ContentHash="G6lj-0iL4Uu4K1OxNpKWlQ" CvElementArea="658, 624, 384, 28" CvType="InputBox" DesignTimeRectangle="659, 626, 361, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-label='*Account. Inventory Shipping Supplies (12300)' aria-role='combobox' tag='INPUT' type='text' class='' aaname='' fuzzylevel:aria-label='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ea79a182-846a-412d-ae9a-2d3c7af6a678" InformativeScreenshot="0Mn6fgbF1_kOYE57Wb4Mbtg" IsResponsive="True" Reference="RfWQQgmbUEqfpiig5DfmmA/DpDcI-Kc1EOZ3fSo1LCf1A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="605c96a3-8365-4f5b-9e7a-9c7fbc9076a7" CvTextArea="581, 636, 62, 13" CvTextArgument="- Prd Line" CvType="Text" DesignTimeRectangle="579, 636, 63, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Prd Line' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Prd Line' /&gt;" Guid="0b8ad15c-ecdc-49c4-9fd2-b4bfb2aaa07e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_21" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Software and Hardware M…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" ContentHash="Ua6kS93VAkmS28NrXHYHZQ" DesignTimeRectangle="-9984, 587, 389, 25" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl aria-role='option' tag='LI' aaname='*(&quot; + account + &quot;)*' innertext='*(&quot; + account + &quot;)*' /&gt;&quot;]" FuzzySelectorArgument="[account]" Guid="dd50b548-d8b3-4f98-9716-1193d04552fc" Reference="RfWQQgmbUEqfpiig5DfmmA/S5ROTUVoMke2OrC_-KMV0Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="None" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_22" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Choose(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="38d5beaf-509a-4cb5-8dca-c8d540807e56" ContentHash="iLI96y6CLEOuZRsLO2q4bw" CvElementArea="1215, 743, 93, 31" CvTextArea="1236, 752, 50, 13" CvTextArgument="Choose" CvType="Button" DesignTimeRectangle="1218, 752, 88, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Choose' tag='SPAN' /&gt;" Guid="71b9bbb9-d859-45b0-8413-524f0f9c7cd8" InformativeScreenshot="6c526bda594a5d9c9db5f589e1b56193.png" Reference="RfWQQgmbUEqfpiig5DfmmA/ZhMkSDZnvEmILAP3Dq1WHQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_23" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PAC20789-BR-Polibag PM3'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="1e6b2440-4427-408a-94e4-7735218a5ae3" ContentHash="zKIdKS2RS027W6urJK-Whw" CvElementArea="377, 445, 14, 14" CvType="CheckBox" DesignTimeRectangle="378, 446, 13, 12" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_line_table_tag' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='checked_lines_41830627' type='checkbox' tag='INPUT' class='req_selection_checkbox' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5c1c9250-27a9-4abd-8a3d-8b42b529ab93" InformativeScreenshot="714b44b42a5d2ce1d3e5546b33adf8ed.png" Reference="RfWQQgmbUEqfpiig5DfmmA/wtKQ6skui0Cy9fLEeYXV3g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="1e6b2440-4427-408a-94e4-7735218a5ae3" CvTextArea="401, 433, 239, 20" CvTextArgument="PAC20789-BR-Polibag PM3" CvType="Text" DesignTimeRectangle="403, 430, 425, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='requisition_line_table_tag' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl type='' tag='H3' class='' aaname=' PAC20789-BR-Polibag PM3 ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PAC20789-BR-Polibag PM3' /&gt;" Guid="03476cf6-8b54-4386-9f79-2d3776c8f635" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Edit Selected'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="6ff1e566-b433-4c37-9a7d-d0be568758ba" ContentHash="IDMyT2NrVkWRMVs0PpVMkA" CvElementArea="398, 352, 109, 28" CvTextArea="411, 360, 83, 13" CvTextArgument="Edit Selected" CvType="Button" DesignTimeRectangle="400, 360, 105, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='adjust_all' tag='SPAN' type='' class='' aaname='Edit Selected' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Edit Selected' /&gt;" Guid="6c4d5f10-9710-4e2f-ba8b-57eb2b36baec" InformativeScreenshot="6c41bf2d541b57391605bd29b2de90a5.png" Reference="RfWQQgmbUEqfpiig5DfmmA/fCaHfOF3c0Sf7m2gFtq5oA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="6ff1e566-b433-4c37-9a7d-d0be568758ba" CvElementArea="398, 352, 109, 28" CvTextArea="411, 360, 83, 13" CvTextArgument="Edit Selected" CvType="Button" DesignTimeRectangle="399, 354, 107, 25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='adjust_all' tag='BUTTON' type='' class='button small clickable-strong-disable' aaname='Edit Selected' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Edit Selected' /&gt;" Guid="a59d6f88-a106-4c5e-8d49-9e1c356e33be" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_24" />
+                    <uix:NSelectItem DisplayName="Select Item 'Select a field'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,204" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="&quot;Need by&quot;" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NSelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="21">
+                          <x:String>"Need by"</x:String>
+                          <x:String>Account</x:String>
+                          <x:String>Asset Category</x:String>
+                          <x:String>Backing Document</x:String>
+                          <x:String>Brazil Item Code</x:String>
+                          <x:String>Business Context</x:String>
+                          <x:String>Category</x:String>
+                          <x:String>Contract</x:String>
+                          <x:String>Email</x:String>
+                          <x:String>End Date</x:String>
+                          <x:String>Goods/Services</x:String>
+                          <x:String>Invoice Matching</x:String>
+                          <x:String>Payment Schedule</x:String>
+                          <x:String>Payment Terms</x:String>
+                          <x:String>Personal Service Company Engagement</x:String>
+                          <x:String>Shipping</x:String>
+                          <x:String>Start Date</x:String>
+                          <x:String>Supplier</x:String>
+                          <x:String>Supplier Site</x:String>
+                          <x:String>Transmission Method</x:String>
+                          <x:String>UIN Operations</x:String>
+                        </scg:List>
+                      </uix:NSelectItem.Items>
+                      <uix:NSelectItem.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="6c524bd0-bef0-444e-b996-d9d9b8b3c681" ContentHash="Ft2VkrgtIEKXS8aFDrQDdg" CvElementArea="398, 504, 211, 31" CvType="InputBox" DesignTimeRectangle="402, 507, 207, 26" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisitionBulkEditFormSelector_38' tag='INPUT' type='text' class='ComboBox__input' aaname='Select a field' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="41da1f96-efd2-4b16-a987-7fd6e6d267f6" InformativeScreenshot="d4635d51d05e5e78c81d68afb8613a31.png" IsResponsive="True" Reference="RfWQQgmbUEqfpiig5DfmmA/T9HaUaAZ7kq2oG5j659jkQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="6c524bd0-bef0-444e-b996-d9d9b8b3c681" CvTextArea="399, 484, 80, 13" CvTextArgument="Select a field" CvType="Text" DesignTimeRectangle="400, 432, 235, 70" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='requisition_bulk_edit_form' tag='LABEL' type='' class='group_label' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Select a field' /&gt;" Guid="fa20a8f4-9b3a-48ba-a2e4-8f94f529d53b" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NSelectItem.Target>
+                    </uix:NSelectItem>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'svg(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="c21bfacc-83f8-48a0-b8d1-edb58ab36198" ContentHash="g93GGg__8UOEQ4Ls3qRYoQ" CvElementArea="643, 504, 212, 31" CvType="InputBox" DesignTimeRectangle="829, 510, 18, 18" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='requisition_bulk_edit_form' tag='svg' /&gt;" Guid="4cfea14f-10a3-41ce-8ec6-4bd42c80e6cc" InformativeScreenshot="d4e5b749bd242a32ca6b19c0496f7735.png" Reference="RfWQQgmbUEqfpiig5DfmmA/hW1KnHm6qEGZwKaPhYQ_kQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset Position="TopLeft" X="8" Y="8" />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_25" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="277364a8-abc1-466f-9bb1-8721a0fdfdc7" ContentHash="Gjob4nNMk0yqwY65BoSH0A" DesignTimeRectangle="829, 544, 18, 17" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='next' parentid='requisition_bulk_edit_form' tag='DIV' /&gt;" Guid="cbabc146-482b-46a4-99f3-ae80b0041313" InformativeScreenshot="d68d6b2826113a0fd688466e8d1b6e37.png" Reference="RfWQQgmbUEqfpiig5DfmmA/o3Nbisg3HEGvaHHUFIGa2g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_26" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '31(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="ee6d5a7e-d92a-45ca-b0a5-b4013b56e2d8" DesignTimeRectangle="827, 793, 28, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aria-label='Saturday, January 31, 2026' tableRow='6' tag='TD' aaname='31' innertext='31' /&gt;" Guid="6dfaf110-c81a-4b6c-9560-0babab09c0ad" InformativeScreenshot="b65eaf292ed5f1d99830386779a177ae.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_27" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Apply'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5c93e68e-a4dc-469a-bfba-78e61a638a68" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="e06cbbab-83f8-436a-8d8c-cb12b2d766e2" ContentHash="eQ5TMnT4G0ulaJrrDKUkgQ" CvElementArea="1262, 558, 89, 31" CvTextArea="1287, 566, 39, 17" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="1289, 566, 36, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='reqBulkEditFormFieldApplyButton' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' tag='SPAN' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='Apply' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' innertext='Apply' check:innerText='Apply' /&gt;" Guid="93e0172c-f6a2-4e77-b7bf-d8b51b10cff6" InformativeScreenshot="0a58bb304d79301d1dff244fcf45da97.png" Reference="RfWQQgmbUEqfpiig5DfmmA/shwO1YqESEGdJxNi3kxSyg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="e06cbbab-83f8-436a-8d8c-cb12b2d766e2" CvElementArea="1262, 558, 89, 31" CvTextArea="1287, 566, 39, 17" CvTextArgument="Apply" CvType="Button" DesignTimeRectangle="1264, 559, 86, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='reqBulkEditFormFieldApplyButton' tag='BUTTON' type='button' class='button primary reqBulkEditFormFieldActionButton' aaname='Apply' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Apply' /&gt;" Guid="708f3b35-d8ae-408a-ad42-de43b8a8e72b" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:20" sap:VirtualizedContainerService.HintSize="450,118" sap2010:WorkflowViewState.IdRef="Delay_28" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.OCREngine>
+                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                </ActivityFunc>
+              </uix:NApplicationCard.OCREngine>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1744, 1084" BrowserType="Edge" ContentHash="kaoWwR_C2UGJcgRnfr6X9w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIFSURBVDhPjVNPSxtBHJ2PkPoJ7K1HCQoeW4QePHnswYNQ8eyhH8BjL6XSsvVQiwnUIiKihypBilspVlJaRcRidM3EtGlWTXbX3awbs8n4e7OzIk0qffBgdub33u/P7LB/IlNZIu4wzZggTtK6mziuTu+AZnCi/mDD+vaCX2bZG8Mnuv1bzkHiU1WoqA6IMupsmmfJQAyslF1BGN2seE83qwHWfR9NE2eyojaQeHjXzRf8Zm4y54lHK2YIkX52JexGS+T9EEJB1Xhs2URLI0pJ0IwRNnX8vGu+dLJVvZKZ/waMwJwX8oVyfZ8MBLEH4iFV1g1fHnhK1o7lUhD2rprnLF18pdITFv48Ye9//Xy2bfvcb6rQdqC1x7N7t5PtoHf0Iw5rIVdxYttpUM+djUpBM+hdPT1nb/kUGTyEgQ0DXNHA2qkN5+4PRTlAwKIBAhN7rpjJ+3IdtoSrdGQQQzNSqiyR4lHg+lmdyq7JNfZwlnjH6z0bFgYI2rEYf5sMuJcuyAn6YSu4P1sMkou/pcORFzpxDF3lF5ld3kJkgAMLfQ1+vziCYCxrWbFg12mUscfmSj/iPaIS30amksIskl8dl6VP9Dg4+blae1241Okce7j2PLHDu0BA1BsC47YsGKv9O94CEAWCCRLGPxi+8RIxdbr3/4VmwGSdGPWKgWUqQ3J9A8auAaRsLO5FtRRgAAAAAElFTkSuQmCC" InformativeScreenshot="0Wwo4eCzMF0--Qt7naOxJ1w" Reference="RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A" Selector="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" Url="https://amazon-test.coupahost.com/user/home" Version="V2">
+                  <uix:TargetApp.Arguments>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Arguments>
+                  <uix:TargetApp.WorkingDirectory>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.WorkingDirectory>
+                </uix:TargetApp>
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
   </Sequence>
 </Activity>

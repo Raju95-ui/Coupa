@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Fulfillment Center - Fi…",
+  "Type": "Element",
+  "Id": "vjisiRv58kO0qLt6PO0w5A",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/vjisiRv58kO0qLt6PO0w5A",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2025-12-29T07:20:04.8072039Z",
+  "Updated": "2025-12-29T07:20:04.8072039Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
