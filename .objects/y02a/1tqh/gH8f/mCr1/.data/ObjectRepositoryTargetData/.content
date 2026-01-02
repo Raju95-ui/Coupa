@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yhFTXGnHj0S163uMhkhbfQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="aad81a9d-c73d-433b-92d7-b77b3cfbbf6c" CvElementArea="47, 310, 595, 48" CvType="InputBox" DesignTimeRectangle="53, 313, 588, 44" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='What do you need? Start your search here' tag='BUTTON' type='button' class='welcomeBanner__searchBtn s-welcomeBannerSearchBtn s-searchBarBtn' aaname='What do you need? Start your search here' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="370c6856-af26-4eea-80bb-8839ec17ca08" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="aad81a9d-c73d-433b-92d7-b77b3cfbbf6c" CvElementArea="47, 310, 595, 48" CvType="InputBox" DesignTimeRectangle="91, 324, 334, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='homepageWelcomeBannerApp' tag='SPAN' type='' class='welcomeBanner__searchBtnText' aaname='What do you need? Start your search here' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="caf0208d-efa7-423d-91fc-b36fcd2ee04d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5ff67ed9e9e36f26fe7a9324fdc8ded6.png" xmlns="">0lZStr_UJL0u3o3bje3VRng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Review Cart",
+  "Type": "Screen",
+  "Id": "i2PbPfRXZ06Fydy40oO9pA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/i2PbPfRXZ06Fydy40oO9pA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/5D3T_8N2h0GTBFtPBesbdw",
+  "Created": "2025-12-30T07:20:37.4775028Z",
+  "Updated": "2025-12-30T07:20:37.4775028Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
