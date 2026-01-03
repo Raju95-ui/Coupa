@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NndWNWd1aUCd0cV84JyE4g" Reference="RfWQQgmbUEqfpiig5DfmmA/oCANBBl_7kaVfDP-xMtCng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="0a51c0ce-fd3a-4221-88f6-56ef2c4f99ed" CvElementArea="1567, 410, 119, 32" CvTextArea="1589, 419, 77, 13" CvTextArgument="Review Cart" CvType="Button" DesignTimeRectangle="1569, 412, 116, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Review Cart' parentid='reactPopover__portal' tag='A' /&gt;" Guid="e2bdfd62-aa22-4219-b299-c061064e1f97" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="83b4edddc5521b01489731eec5bc9c07.png" xmlns="">0W-gNMDSMH06CmnQvUa3R2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

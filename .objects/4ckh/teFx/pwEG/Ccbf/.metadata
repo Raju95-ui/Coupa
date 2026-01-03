@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Channel",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "CcbfJNN63Eiv8AjBSTARdQ",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/CcbfJNN63Eiv8AjBSTARdQ",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T16:09:27.7310292Z",
+  "Updated": "2026-01-03T16:09:27.7310292Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

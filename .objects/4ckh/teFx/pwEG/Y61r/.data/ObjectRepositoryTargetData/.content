@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kM9vGEEzLEi8ibIPi3Yukg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="5670a0b6-8c6d-4df9-aa36-3eb81e4995c8" CvElementArea="1097, 566, 203, 31" CvType="InputBox" DesignTimeRectangle="1099, 568, 200, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_line_custom_field_9' tag='SELECT' type='' class='custom_field_select' aaname='Consumables' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2f54fd0-f33b-4a7c-9317-db1b333fb782" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5670a0b6-8c6d-4df9-aa36-3eb81e4995c8" CvTextArea="1098, 546, 86, 13" CvTextArgument="Consumables" CvType="Text" DesignTimeRectangle="1099, 526, 85, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Consumables' class='group_label' parentid='edit-line' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Consumables' /&gt;" Guid="07eabb7a-63eb-48f8-82ae-e059b93881fc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c3687f8ab6f128e7146ce9f08954d9f8.png" xmlns="">0N5RJc0daqEyAk6luNvZAGw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

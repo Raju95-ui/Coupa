@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SSUFNu4b7k6tuV_p9916sQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="597f7680-5954-40a5-bbf5-5f587e6a02ec" CvElementArea="539, 132, 74, 31" CvType="InputBox" DesignTimeRectangle="540, 134, 72, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='requisition_line_currency_id_chosen' tag='A' type='' class='chosen-single' aaname='INR' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='INR' /&gt;" Guid="3277047f-d152-4669-8395-ef2228559a8c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="597f7680-5954-40a5-bbf5-5f587e6a02ec" CvElementArea="539, 132, 74, 31" CvType="InputBox" DesignTimeRectangle="546, 135, 39, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='INR' parentid='requisition_line_currency_id_chosen' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='INR' /&gt;" Guid="4c77df9d-33b3-4bb7-884d-ef9fac65a311" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9022130772c4170337a67cbcb6b024c1.png" xmlns="">09YMYw3xMWEaZ7WvqkovnDQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

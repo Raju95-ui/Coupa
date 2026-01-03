@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CKrSr0xwp06cd0JELAln_Q" Reference="RfWQQgmbUEqfpiig5DfmmA/RLrp26fZ8USMEIvPKUAOSg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="284c9820-626b-4b5e-9656-e212105279b6" CvElementArea="1081, 671, 89, 31" CvTextArea="1104, 679, 46, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1084, 675, 84, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='ui-button-text' tag='SPAN' type='' aaname='Submit' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit' /&gt;" Guid="a3ffba71-2cc6-4dbf-a7f4-37b22d5f9035" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="284c9820-626b-4b5e-9656-e212105279b6" CvElementArea="1081, 671, 89, 31" CvTextArea="1104, 679, 46, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="1083, 673, 86, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Submit' aria-role='button' tag='BUTTON' type='button' class='blue ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-focus' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Submit' /&gt;" Guid="46b5f5af-ab64-444f-b3f7-11408c8d1a13" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5e783d489261b78c8e904e4329075447.png" xmlns="">0DGHp5GVQjkW6O4wPoPlStw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

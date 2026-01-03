@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dcsyH5kFWEW3zJq7n5WZTA" Reference="RfWQQgmbUEqfpiig5DfmmA/T_rKDJzZSE-9QoN6d6G9nA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="7ad202ca-175f-4075-b10b-97106f488ffc" CvElementArea="659, 729, 383, 28" CvType="InputBox" DesignTimeRectangle="659, 731, 361, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='*Project' aria-role='combobox' tag='INPUT' type='text' /&gt;" Guid="3244d5be-97f5-47e8-876f-cd8c42ddb267" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="071bd6895cb9242e41e9198829bb3d73.png" xmlns="">09NlZ7ubizE6Ylirsf6yYhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

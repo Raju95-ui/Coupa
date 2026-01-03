@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2yx6oTkVbE2RYLn993PYoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="b51e402b-5ca7-493f-bff9-58d4e04134c1" CvElementArea="1162, 437, 25, 23" CvType="Icon" DesignTimeRectangle="1166, 440, 18, 18" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Choose an Address' parentid='shipTo' tag='IMG' /&gt;" Guid="e724f089-685e-4cd4-b242-50f12f440efc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHZSURBVEhL3ZNLLwNRFMetJNa21nY+gb2lvY+CEOIVhAQLIuKReERLkJBoqhUJSiTer3jTaWfGo+1UO2Wm0+PO6ZmOaqNTYeOf3GTmf8/53XPvPbcA/kj/HHzGyTDgEKB6/AFHk52DtZMwKPEERZiyBNZYnm3jOQXsmPdB3xIPdVNe/O+c90MgEqfopCyBZzZfENC14AcxpJILoGr6gsm59jkfvKtm5TnBfFDBxMZpL0hyelWGRt2PGOM+ksixAHbshTBp9dhM+qrnsIoxPYs8ORbAs57kVi/5GDnZ1cwusp6duaGc4GWqePcmQk6m4uysaydYl9g4ciyA92+jCB52PZKTKSNmbNWMyQnWq2md4TBx/SxMrikhpODF6vPXwhu5FsCnXhlq2Db1RH3YWevt3kTRdx1KeK66r39/Vk7wCLVSA6tqaEVMLWCMFrYb50EIvr697GBNhae5KpAvFiCmJGDQKWI/6/IFFNi+eEXYzlUEH0k2ZYATqgzCZAXctRTAfXsRvAt7NJOf0sBaLAj8WDlCjeHtLWGLfd/D2ZQCaxERfINladC7tkKIns9SRH5KgaWtrjToQ3cxvHEems1fn44iAaKtEqFcfynEpXvyf6aMy/st/REY4APuYirxbJza1AAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c03eeb597991477330cb3517c67f6969.png" xmlns="">0hhLwYW0ubU6UR6NtDOzzmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

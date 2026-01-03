@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WxuRl-Y5rUqAvm7fao9Q9A" Reference="RfWQQgmbUEqfpiig5DfmmA/q32CJS4CGE2rNRtNjNActw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="f5a65008-28f4-48b5-9dc1-2ba81bfe2f34" CvElementArea="1185, 1023, 169, 31" CvTextArea="1207, 1032, 126, 16" CvTextArgument="Submit for Approval" CvType="Button" DesignTimeRectangle="1188, 1032, 164, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='submit_for_approval_link' tag='SPAN' type='' class='' aaname='Submit for Approval' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit for Approval' /&gt;" Guid="d77603c8-c6bd-4793-993a-4b436dd4eab1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f5a65008-28f4-48b5-9dc1-2ba81bfe2f34" CvElementArea="1185, 1023, 169, 31" CvTextArea="1207, 1032, 126, 16" CvTextArgument="Submit for Approval" CvType="Button" DesignTimeRectangle="1187, 1025, 166, 28" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='submit_for_approval_link' tag='BUTTON' type='submit' class='button blue right submit_for_approval' aaname='Submit for Approval' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit for Approval' /&gt;" Guid="a04f6678-f771-4218-9ba2-2aa3ce4ef5da" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="457c55c8c695e2214e33e9fdd1460064.png" xmlns="">00dzEdblqZkSmFV5oDXIIKQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

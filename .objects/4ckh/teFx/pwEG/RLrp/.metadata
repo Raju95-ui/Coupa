@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Submit",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "RLrp26fZ8USMEIvPKUAOSg",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/RLrp26fZ8USMEIvPKUAOSg",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T16:32:06.3111206Z",
+  "Updated": "2026-01-03T16:32:06.3111206Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

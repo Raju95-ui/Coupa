@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Review Cart(2)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "oCANBBl_7kaVfDP-xMtCng",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/oCANBBl_7kaVfDP-xMtCng",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T15:00:19.1200152Z",
+  "Updated": "2026-01-03T15:00:19.1200152Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

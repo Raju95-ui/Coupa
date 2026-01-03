@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Personal Service Compan…",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "qllijTm7ekCRo1q8CagTnw",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/qllijTm7ekCRo1q8CagTnw",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T15:26:08.7421028Z",
+  "Updated": "2026-01-03T15:26:08.7421028Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

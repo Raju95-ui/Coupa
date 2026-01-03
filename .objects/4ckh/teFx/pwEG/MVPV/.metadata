@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Choose(2)",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "MVPVVWgYGUy7YKj50BrrqQ",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/MVPVVWgYGUy7YKj50BrrqQ",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T16:22:51.475018Z",
+  "Updated": "2026-01-03T16:22:51.475018Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

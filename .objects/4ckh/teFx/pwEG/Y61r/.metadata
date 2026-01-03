@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Consumables",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "Y61rQliWxE2v0OnjOmMX_Q",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/Y61rQliWxE2v0OnjOmMX_Q",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T15:18:53.7287082Z",
+  "Updated": "2026-01-03T15:18:53.7287082Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

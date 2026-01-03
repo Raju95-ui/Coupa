@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="wvszPkN_vkuQQS2PlbhHRA" Reference="RfWQQgmbUEqfpiig5DfmmA/Y64UtRQ8V062-NUrGtffUg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="33ae598a-dac9-4cd3-8232-0be6d1acc830" CvElementArea="1254, 275, 120, 31" CvTextArea="1303, 284, 49, 13" CvTextArgument="Choose" CvType="Button" DesignTimeRectangle="1257, 284, 115, 15" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='picker_address_table_tag' tag='TABLE' /&gt;&lt;webctrl aaname=' Choose' tableRow='2' tag='SPAN' /&gt;" Guid="2507e825-f905-4a08-a0a8-9c4a66b7a729" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="df94d679c8c87d45f92483a05d83ebf4.png" xmlns="">0z-_vFkTM3UKkfqLoUqS-wQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
