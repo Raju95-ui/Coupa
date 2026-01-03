@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Postal & Small Parcel &…",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "KSQpfrxJmEi87xeo9-mOhg",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/KSQpfrxJmEi87xeo9-mOhg",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T12:24:56.8831088Z",
+  "Updated": "2026-01-03T12:24:56.8831088Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

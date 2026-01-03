@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ABBR",
+  "Type": "Element",
+  "Id": "IQhKsxmwMUCQTQozdCy1_Q",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/IQhKsxmwMUCQTQozdCy1_Q",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/mOGGc67CDEyDMztSz75iYg",
+  "Created": "2026-01-02T09:02:54.3043543Z",
+  "Updated": "2026-01-02T09:02:54.3043543Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

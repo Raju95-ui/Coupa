@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2OTvZ3wBCEeLVesNiDvzWA" Reference="RfWQQgmbUEqfpiig5DfmmA/AMgSaYMdBkCY9dY5wkLqpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="3877fea3-2dec-48f3-a45d-bd959ca88717" DesignTimeRectangle="546, 576, 41, 23" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Currency Selector. INR' aria-role='combobox' tag='INPUT' type='text' /&gt;" Guid="36653382-1006-47cd-993e-8eabadbf2f58" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="98c711deb171ed2cdf78dd4553e9861d.png" xmlns="">0RVvEJwoHwEiHwPjjpwEkEw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CnqDYGXFjkypKbVM-Dmu2Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="aac2bb63-f53b-45ba-823f-81899db83dd0" CvElementArea="381, 463, 85, 29" CvTextArea="394, 470, 57, 13" CvTextArgument="Add Line" CvType="Button" DesignTimeRectangle="384, 470, 79, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='add_requisition_line_link' tag='SPAN' innertext=' Add Line' visibleinnertext='Add Line' /&gt;" Guid="92afa713-d79d-46ef-ab3b-e89c5f995ea4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="aac2bb63-f53b-45ba-823f-81899db83dd0" CvTextArea="416, 425, 114, 19" CvTextArgument="Cart Items" CvType="Text" DesignTimeRectangle="375, 417, 155, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='requisition-cart' tag='H2' type='' class='left' aaname='Cart Items' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cart Items' /&gt;" Guid="0a1825a2-787e-4978-aec8-f94bebf3a71c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="683184cc130e2488f04a5e3932bd4a88.png" xmlns="">0fPjsYi0CjEuX18nueWJFpA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

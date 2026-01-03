@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="weT8yc472EmxG5w6RgQGfg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="d0601560-afd8-449c-b1a2-7f30b3886fc2" CvTextArea="540, 498, 34, 13" CvTextArgument="Clear" CvType="Text" DesignTimeRectangle="542, 498, 31, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='clear_on_behalf_of' tag='A' /&gt;" Guid="81952f69-8377-498a-8057-c49e0eb9ea08" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d0601560-afd8-449c-b1a2-7f30b3886fc2" CvTextArea="452, 475, 82, 13" CvTextArgument="On Behalf Of" CvType="Text" DesignTimeRectangle="387, 473, 146, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='topForm' tag='LABEL' type='' class='group_label' aaname='On Behalf Of' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='On Behalf Of' /&gt;" Guid="4274ddba-2b14-4691-9c09-afd6f5f0ef5c" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa6dc8a7c80b7f520a01e3cdb19dcb5b.png" xmlns="">0EjzB15ImSEqbBRZACa_5wQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

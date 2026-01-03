@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Add Line",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "gsVWRphO-U6bO7qON0JOjA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/gsVWRphO-U6bO7qON0JOjA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T11:58:13.8300682Z",
+  "Updated": "2026-01-03T11:58:13.8300682Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

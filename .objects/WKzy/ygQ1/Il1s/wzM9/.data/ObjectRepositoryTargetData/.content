@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lyrj0NTGoUaQ_AenXn3qZg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11860821/edit" DesignTimeRectangle="0, 0, 394, 482" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl role='pane' /&gt;" Guid="1b97bf69-1b05-42e9-8dd0-45ffb274a552" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a29bf0ba08d753e922b0499763ff2936.png" xmlns="">0156-wgvxhEGvlOju9oU1Mg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="I6IRyeB3WUCeva8GZgr_ng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="4d0e3236-a3bf-461d-87de-6c34d1dd607a" CvElementArea="935, 155, 71, 35" CvTextArea="959, 165, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="936, 156, 68, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='amazon-test.coupahost.com says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="63bf2be3-e679-4adf-9d03-aaec39701b17" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Review Cart - Profile 1 - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="5d7ba22b2ff45365600fabed9e62a96d.png" xmlns="">03PZO5S7jMU24uHK5qhU1vg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

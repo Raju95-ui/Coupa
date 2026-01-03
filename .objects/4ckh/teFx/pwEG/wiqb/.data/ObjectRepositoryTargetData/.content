@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DvNe-X7u20y7mXBTfGvqCw" Reference="RfWQQgmbUEqfpiig5DfmmA/wiqblPT7F0ycwJQSn1LSAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="909727e8-9143-4173-ba99-eb6f3510b0a8" CvElementArea="403, 595, 203, 30" CvType="InputBox" DesignTimeRectangle="405, 597, 200, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_line_custom_field_19' tag='SELECT' type='' class='custom_field_select' aaname='Goods/Services' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7acb1575-ab48-4f30-8da8-afe926d87cfb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="909727e8-9143-4173-ba99-eb6f3510b0a8" CvTextArea="403, 575, 100, 13" CvTextArgument="Goods/Services" CvType="Text" DesignTimeRectangle="405, 555, 98, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Goods/Services' class='group_label' parentid='edit-line' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Goods/Services' /&gt;" Guid="5db83611-3e41-4e88-94af-f5af9a3fa83b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e0081daa50f3cdf528871ae5ee09140a.png" xmlns="">0FZjGeQpZhUu3Pg76m2sYaQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+﻿{
+  "Name": "GoodsServices",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "ChOgGZa6a0-AHgg2WOyPAg",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/ChOgGZa6a0-AHgg2WOyPAg",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/pwEGvRAjk0miOI89NH570A",
+  "Created": "2026-01-03T12:35:04.1660188Z",
+  "Updated": "2026-01-03T12:35:04.1660188Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

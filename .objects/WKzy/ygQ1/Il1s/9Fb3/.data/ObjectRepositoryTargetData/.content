@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="onqubc1Ouk6X5tR07tCE6Q" Reference="RfWQQgmbUEqfpiig5DfmmA/9Fb3LiOSj0-0N7nSPc3jfw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="df06235c-4576-41df-b36c-70306828944f" CvElementArea="153, 153, 1434, 50" CvType="InputBox" DesignTimeRectangle="231, 154, 1352, 48" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='What do you need?' tag='INPUT' type='text' isleaf='1' name='searchInput' parentclass='universalSearchModal__searchContainer' placeholder='What do you need?' /&gt;" Guid="bbcbbe66-c9ab-4010-8b6c-8b7245057eba" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="df06235c-4576-41df-b36c-70306828944f" CvElementArea="153, 153, 1434, 50" CvType="InputBox" DesignTimeRectangle="142, 168, 50, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='browseButton__text' type='' tag='SPAN' aaname=' All' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='All' /&gt;" Guid="e16f90bb-8826-47dc-8c1e-4e159af8016b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8da45075a1297d2a96202964abcccc63.png" xmlns="">0DgQl0HcMdUKr48L3OaOInw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

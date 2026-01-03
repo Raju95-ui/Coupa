@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uytoLyrGrEOw54Bx-_zKlQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861230/edit" CVScreenId="f320dcd1-6ca4-432d-b054-5f9c954838c2" CvElementArea="405, 716, 112, 29" CvType="InputBox" DesignTimeRectangle="406, 717, 110, 27" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_line_table_tag' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl id='requisition_line_need_by_date' type='text' tag='INPUT' class='date date_picker  hasDatepicker' placeholder='mm/dd/yy' aaname='*&amp;quot;Need by&amp;quot;' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="c0907516-2360-43e8-8ccf-e04d5a176bff" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f320dcd1-6ca4-432d-b054-5f9c954838c2" CvTextArea="404, 694, 73, 16" CvTextArgument="* &quot;Need by&quot;" CvType="Text" DesignTimeRectangle="406, 675, 70, 42" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='requisition_line_table_tag' tag='TABLE' matching:id='fuzzy' fuzzylevel:id='0.0' /&gt;&lt;webctrl aaname='&amp;quot;Need by&amp;quot;' parentid='edit-line' type='' tag='LABEL' class='group_label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='*&amp;quot;Need by&amp;quot;' /&gt;" Guid="5fa92d00-3262-41f8-85d1-b694fb8994b0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="84ea3f67caa58b4213fed0b86acccd03.png" xmlns="">0DK5s4_FzW0inRXOumD2-DA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

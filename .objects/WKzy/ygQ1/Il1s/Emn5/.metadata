@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Submit for Approval",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "Emn50RVkM0mMvtYk1SqifA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/Emn50RVkM0mMvtYk1SqifA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/Il1sFspbh0mTw4exnB-xQA",
+  "Created": "2026-01-02T17:45:53.540552Z",
+  "Updated": "2026-01-02T17:45:53.540552Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

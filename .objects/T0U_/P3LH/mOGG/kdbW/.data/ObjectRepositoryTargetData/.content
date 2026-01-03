@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="i86I0Z4pXUy18vNCz9NMqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="865cbc55-d872-4e6c-bca4-3ad8d3a58f0f" CvElementArea="580, 332, 69, 28" CvTextArea="594, 340, 40, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="583, 340, 63, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='delete_all' tag='SPAN' type='' class='' aaname='Delete' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Delete' /&gt;" Guid="c73b589d-4202-479d-bf21-d8a701ccc1e4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="865cbc55-d872-4e6c-bca4-3ad8d3a58f0f" CvElementArea="580, 332, 69, 28" CvTextArea="594, 340, 40, 13" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="582, 334, 65, 25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl id='delete_all' tag='BUTTON' type='' class='button small clickable-strong-disable' aaname='Delete' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Delete' /&gt;" Guid="d4cfe6ff-75ef-4899-bcea-b85cbea96aa0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="30a14e7ae7805c318c48879b93dd74d5.png" xmlns="">0nWHKhHj_3E6pBFHp0NjJwg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

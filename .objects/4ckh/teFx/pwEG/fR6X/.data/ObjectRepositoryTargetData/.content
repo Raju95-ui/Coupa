@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NFSV17yo9EWDPnuAQflSuQ" Reference="RfWQQgmbUEqfpiig5DfmmA/fR6XEoPFskaI-7xNuN2vEw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11861233/edit" CVScreenId="909727e8-9143-4173-ba99-eb6f3510b0a8" CvElementArea="866, 734, 113, 30" CvType="InputBox" DesignTimeRectangle="867, 735, 111, 28" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='requisition_line_custom_field_2' tag='INPUT' type='text' class='date date_picker  hasDatepicker' placeholder='mm/dd/yy' aaname='End Date' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6fef9ad1-8c65-4dd6-b781-bdb81f96992f" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="909727e8-9143-4173-ba99-eb6f3510b0a8" CvTextArea="867, 713, 57, 13" CvTextArgument="End Date" CvType="Text" DesignTimeRectangle="867, 694, 57, 41" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='End Date' class='group_label' parentid='edit-line' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='End Date' /&gt;" Guid="7423ed8b-cc8c-4333-960c-ff05b08d80d9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fc07cfe2951cb10d1b122e72057a484d.png" xmlns="">0r4jfwPSK90uUoSgakviGCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

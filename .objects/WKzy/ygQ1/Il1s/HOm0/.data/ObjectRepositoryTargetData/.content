@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="chvPpT-7U067VMX1mvvZTg" Reference="RfWQQgmbUEqfpiig5DfmmA/HOm0ZNP-z0OFGFIRlLzTxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="d7eb2646-bb26-416b-b418-c1467b2fefee" CvElementArea="658, 443, 70, 33" CvType="InputBox" DesignTimeRectangle="660, 444, 45, 30" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-label='Add SIGN.WRKWL.LAPTOP.STICKER - Vinyl Laptop Sticker' aria-role='button' tag='SPAN' /&gt;" Guid="1b04c9cc-f107-46f1-96f4-9670298b57a0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="14dd8e030ea2195888eccf0bc6811067.png" xmlns="">0T6bCqTnTUUaObUGgF23kTA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

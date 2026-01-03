@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Choose Chart Of Accounts(2)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "HyX8-cEPYUWofSlBmd25QA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/HyX8-cEPYUWofSlBmd25QA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/Il1sFspbh0mTw4exnB-xQA",
+  "Created": "2026-01-02T16:50:21.4197032Z",
+  "Updated": "2026-01-02T16:50:21.4197032Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

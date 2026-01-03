@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QQkLrxLnO06MsD1sIU3rEQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11854130/edit" CVScreenId="ad691a71-317a-4d0f-88cb-79689c5ee2d1" CvTextArea="660, 554, 275, 16" CvTextArgument="Amazon Servicos de Varejo do Brasil Ltda (4R)" CvType="Text" DesignTimeRectangle="656, 549, 389, 25" ElementType="ListItem" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='option' class='active-result' tag='LI' /&gt;" Guid="0a095454-65b2-47f4-8dd2-9cd6d472cc6c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ad691a71-317a-4d0f-88cb-79689c5ee2d1" CvTextArea="579, 531, 64, 13" CvTextArgument="- Location" CvType="Text" DesignTimeRectangle="577, 531, 65, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Location' class='segment-meta' tag='SPAN' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Location' /&gt;" Guid="7decd5d3-95c6-4eb1-88e5-c7b4bb431528" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="11b834be2f51e4797463bad23e8e7200.png" xmlns="">0cD8gjir8YE-PtVITYy7Fxw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

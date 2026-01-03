@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_Xivu8JM_EWSOYfUSZe9kw" Reference="RfWQQgmbUEqfpiig5DfmmA/J5wiz_zi_UmXW0h1n59WUA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11860821/edit" DesignTimeRectangle="571, 554, 150, 21" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='requisition_line_table_tag' tag='TABLE' /&gt;&lt;webctrl idx='2' tableRow='1' tag='DT' /&gt;" Guid="55649123-2689-420b-b4c5-74f1bed04b05" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <imageRef attrName="InformativeScreenshot" originalValue="95242d562e6eef9caa58194f3e725d5d.png" xmlns="">0LnRicRAiLkagrXu9jqNE1Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

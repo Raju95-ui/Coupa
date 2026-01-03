@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Delete",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "kdbWTTMR_EmofMAPUKVpsw",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/kdbWTTMR_EmofMAPUKVpsw",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/mOGGc67CDEyDMztSz75iYg",
+  "Created": "2026-01-02T07:13:47.1181846Z",
+  "Updated": "2026-01-02T07:13:47.1181846Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

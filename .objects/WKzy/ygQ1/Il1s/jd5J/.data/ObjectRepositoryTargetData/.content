@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yh-eR412g0KJk25nBNpddQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/requisition_headers/11860821/edit" CVScreenId="0f4140da-6b7e-496f-9984-bca4493ae6bf" CvElementArea="652, 450, 390, 31" CvType="InputBox" DesignTimeRectangle="653, 452, 388, 28" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='account_account_type_id' tag='SELECT' type='' class='account-type-control' aaname='Choose Chart Of Accounts' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="aab0caa6-8634-4dbd-8dfe-47897fc35ee0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Review Cart' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0f4140da-6b7e-496f-9984-bca4493ae6bf" CvTextArea="476, 459, 167, 13" CvTextArgument="Choose Chart Of Accounts" CvType="Text" DesignTimeRectangle="412, 457, 238, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Choose Chart Of Accounts' class='group_label' tag='LABEL' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Choose Chart Of Accounts' /&gt;" Guid="76ad115c-6146-4d9e-ab0f-02bc2d196250" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e063294da1f91fd53f88f0aed392d7f0.png" xmlns="">0CXV14T3HBUamGko_jd4aHQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

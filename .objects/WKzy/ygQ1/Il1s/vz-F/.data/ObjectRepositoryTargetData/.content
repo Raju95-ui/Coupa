@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TEAgmO1yBEaHZGwdp-y0Rg" Reference="RfWQQgmbUEqfpiig5DfmmA/vz-FKrk_XUucv3j4oDedZg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="amazon-test.coupahost.com/user/home" CVScreenId="927fdff5-e5e8-4789-84d7-c79475caf91a" CvElementArea="47, 258, 595, 47" CvType="InputBox" DesignTimeRectangle="91, 271, 334, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='homepageWelcomeBannerApp' tag='SPAN' type='' class='welcomeBanner__searchBtnText' aaname='What do you need? Start your search here' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="177c64e5-a48b-4b55-88fd-1e38da6969ab" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Coupa Home' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="[UiPath.UIAutomationNext.Enums.NWaitForReady.Complete]">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="927fdff5-e5e8-4789-84d7-c79475caf91a" CvElementArea="47, 258, 595, 47" CvType="InputBox" DesignTimeRectangle="53, 260, 588, 44" ElementType="Button" FuzzySelectorArgument="&lt;webctrl name='What do you need? Start your search here' tag='BUTTON' type='button' class='welcomeBanner__searchBtn s-welcomeBannerSearchBtn s-searchBarBtn' aaname='What do you need? Start your search here' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What do you need? Start your search here' /&gt;" Guid="b4e5a377-9a4f-4418-9f29-793ffec6b5da" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c074d863cd8ec60f6d0cffa9a976b055.png" xmlns="">008rjE-GF4kOQggF7NnYwJg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

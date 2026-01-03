@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge Coupa Home",
+  "Type": "Screen",
+  "Id": "Il1sFspbh0mTw4exnB-xQA",
+  "Reference": "RfWQQgmbUEqfpiig5DfmmA/Il1sFspbh0mTw4exnB-xQA",
+  "ParentRef": "RfWQQgmbUEqfpiig5DfmmA/ygQ1mubMIU-sp08O7LVAYw",
+  "Created": "2026-01-02T15:25:40.3096904Z",
+  "Updated": "2026-01-02T15:25:40.3096904Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.21.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
